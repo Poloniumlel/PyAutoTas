@@ -1,36 +1,33 @@
-# Simple python implementation of what your usual tas app would let you do
-## features:
-keyboard and mouse inputs
-saving and loading mouse location
-waiting specific amount of frames ( by default the frame rate is 60 fps , can be changed in the code )
-executing multiple inputs in a single frame
-reading from a text file to get input sequence
-## how it works:
-The code lets you input a specific string of inputs into a text file. Then upon clicking insert ( changeable in the code ), it reads that file , and executes the inputs line by line. between each line theres a single frame ( by default 1/60th of a second , for 60 fps. can be set to different amounts but can stop being accurate on uncapped fps games )
-if it finds a wait message , it waits for the specific amount of frames ( for example wait50 will wait 50 frames , or 5/6th of a second )
-for a left or right message , it clicks the respective mouse button
-save - saves the current mouse location. if one is already saved , overrides it.
-load - loads the saved mouse location.
-mouse - moves the mouse by specific amount of pixels ( example: mouse,50,50 moves the mouse 50 pixels up and 50 pixels right )
-## How to use
-Create a text file in the same directory as the code file.
-fill it with the sequence you want
-example "
-save
-mouse,50,120
-w s
-a d
-left
-load
-"
-run the program in the command line in the directory of the app with the text file as the argument ( replace sequence.txt with the name of your file ( python PyAutoTas.py sequence.txt )
-click insert
-it should now do the sequence you provided it with
+# PyPcTAS (Python Task Automation Script)
+PyTAS is a simple yet powerful Python script for automating repetitive tasks through keyboard and mouse inputs. Whether you're looking to streamline your workflow, perform repetitive actions in games ( **or make speedruns!!!** ), or automate sequences of interactions, PyTAS has got you covered.
+
+## Features:
+**Save and Load Mouse Location:** Store and retrieve the current mouse position effortlessly.  
+**Wait for Frames:** Introduce delays by waiting for a specific number of frames (default frame rate is 60 fps, customizable in the code).  
+**Execute Multiple Inputs in a Single Frame:** Execute a sequence of inputs line by line with precision timing.  
+**Mouse Movements:** Move the mouse by a specified number of pixels, providing precise control.  
+**Keyboard Input:** Press and release keys, including customizable key holding functionality.
+
+## How It Works:
+Simply create a text file with the desired sequence of inputs. Upon running the script and pressing the designated key (default is 'Insert'), PyTAS reads the file and executes the inputs sequentially. Each line corresponds to one frame, maintaining accuracy in execution.
+## Usage:
+- Create a text file in the same directory as the PyTAS script.  
+ - Fill the text file with your desired input sequence (e.g., "save mouse,50,120 w s a d left load").  
+- Run the script in the command line, specifying the text file as an argument (e.g., python PyTAS.py sequence.txt).  
+- Press 'Insert' to initiate the sequence execution.
+## Avalaiable Commands:
+- **wait** - wait a specific amount of frames ( by default 1/60th of a second) example: wait120 ( waits 120 frames)
+- **mouse** - moves mouse relative to current position , example: mouse,100,100
+- **left** - left clicks
+- **right** - right clicks
+- **hold** - holds a specific key example: hold,z,120 ( holds z for 120 frames , or 2 sec for a selected framerate of 60 sec)
+- **save** - saves current mouse position. doing this twice overides the old saved position
+- **load** - loads the last saved mouse position (**WARNING** - Might not work in a lot of 3d games due to its implementation! ! !)
 ## Dependencies:
-time
-keyboard
-pyautogui
-sys
-### Installing dependencies:
-open command line
-run pip install {dependency name} ex: pip install pyautogui
+- **keyboard**
+- **pyautogui**
+- **pydirectinput**
+## Installing Dependencies:
+Open the command line and run:
+
+```pip install keyboard pyautogui pydirectinput ```
