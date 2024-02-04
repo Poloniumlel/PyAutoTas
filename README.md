@@ -1,6 +1,10 @@
 # PyPcTAS (Python Task Automation Script)
 PyTAS is a simple yet powerful Python script for automating repetitive tasks through keyboard and mouse inputs. Whether you're looking to streamline your workflow, perform repetitive actions in games ( **or make speedruns!!!** ), or automate sequences of interactions, PyTAS has got you covered.
 
+https://img.shields.io/github/stars/poloniumlel/PyPcTas?style=for-the-badge&color=yellow https://img.shields.io/github/issues-raw/poloniumlel/PyPcTas?style=for-the-badge&color=red 
+
+
+
 ## Features:
 **Save and Load Mouse Location:** Store and retrieve the current mouse position effortlessly.  
 **Wait for Frames:** Introduce delays by waiting for a specific number of frames (default frame rate is 60 fps, customizable in the code).  
