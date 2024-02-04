@@ -1,8 +1,7 @@
 # PyPcTAS (Python Task Automation Script)
 PyTAS is a simple yet powerful Python script for automating repetitive tasks through keyboard and mouse inputs. Whether you're looking to streamline your workflow, perform repetitive actions in games ( **or make speedruns!!!** ), or automate sequences of interactions, PyTAS has got you covered.
 
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/poloniumlel/PyPcTas?style=for-the-badge&logoColor=red&color=red">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/poloniumlel/PyPcTas?style=for-the-badge&color=yellow">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/poloniumlel/PyPcTas?style=for-the-badge&logoColor=red&color=red"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/poloniumlel/PyPcTas?style=for-the-badge&color=yellow">
 
 
 
